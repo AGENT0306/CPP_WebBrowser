@@ -8,6 +8,7 @@
 #include <QScreen>
 #include <QApplication>
 #include <iostream>
+#include <QTabWidget>
 
 class MainWin: public QMainWindow {
     Q_OBJECT
@@ -15,13 +16,17 @@ public:
     MainWin();
     ~MainWin() override;
 private:
-    bool isFullScreen;
+    void setTabWid();
     void setToolBar();
-    void setToolBox();
     void setWebEngine();
+    void setMainWid();
+    bool isFullScreen;
     int width;
     int height;
     QRect screenGeo;
+    QToolBar *toolBar;
+    QWidget *mainWid;
+    QTabWidget *tabWid;
 };
 
 #endif //MAINWINDOW_H
