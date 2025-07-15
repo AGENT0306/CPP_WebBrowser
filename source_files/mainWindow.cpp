@@ -19,7 +19,7 @@ MainWin::MainWin() {
     //Run set-up functions
     setToolBar();
     setMainWid();
-    setTabBar();
+    setTabWid();
     setWebEngine();
 
     // QTabBar* test = new QTabBar(this);
